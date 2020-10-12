@@ -3,12 +3,11 @@
 
 ##### Build and push the app image to a registry (Docker Hub in this example)
 
-`composer install`
-
-`docker build . -t  <your-docker-id>/k8s-symfony-example-app:0.1.0`
-
-`docker push <your-docker-id>/k8s-symfony-example-app:0.1.0`
-
+```
+composer install
+docker build . -t  <your-docker-id>/k8s-symfony-example-app:0.1.0
+docker push <your-docker-id>/k8s-symfony-example-app:0.1.0
+```
 
 ##### Install the app on Minikube using Helm
 
